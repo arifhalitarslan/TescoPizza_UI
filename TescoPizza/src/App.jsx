@@ -1,7 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./Pages/MainPage";
 import Navbar from "./Components/Navbar";
+import Confirmation from "./Pages/Confirmation";
+import Validation from "./Pages/Validation";
+import Form from "./Components/Form";
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <BrowserRouter>
       <Navbar/>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<Form/>} />
+          <Route path="/Confirmation" element={<Confirmation />} />
+          <Route path="/Validation" element={<Validation />} />
         </Routes>
       </BrowserRouter>
     </>

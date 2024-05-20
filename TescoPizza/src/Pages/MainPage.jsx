@@ -3,7 +3,9 @@ import './MainPage.css'
 
 function MainPage() {
   return (
-    <div>MainPage</div>
+    <div>
+      müberra yerinde
+    </div>
   )
 }
 

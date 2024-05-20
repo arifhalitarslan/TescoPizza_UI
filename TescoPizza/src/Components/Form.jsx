@@ -78,11 +78,11 @@ export default function Form() {
     <form ref={form} className="form" onSubmit={handleSubmit}>
       <header>
         <div className="TitleSecure">
-          <h3>Payment Details </h3>
+          <h3>Payment Details</h3>
           <GrSecure className="secureIcon" />
         </div>
         <div className="Amount">
-          <p> Amount : </p>
+          <p>Amount:</p>
           <label className="price">100$</label>
         </div>
       </header>
@@ -93,11 +93,12 @@ export default function Form() {
           <span className="span"></span>
         )}
         <div className="NomDuClient">
-          <label> Customer Name and Surname </label>
-          <input name="NomDuClient" onChange={handleChange} />
+          <label style={{ fontSize: '15px', fontWeight: 'bold' }}>Customer Name and Surname</label>
+          <input name="NomDuClient" onChange={handleChange} 
+          placeholder="Valid Name Surname"/>
         </div>
         <div className="NumDeCarte">
-          <label> Card Number </label>
+          <label style={{ fontSize: '15px', fontWeight: 'bold' }}>Card Number</label>
           <input
             onChange={handleChangeCardNumber}
             placeholder="Valid Card Number"
@@ -108,7 +109,7 @@ export default function Form() {
         </div>
         <div className="DateEtCvc">
           <div className="Date">
-            <label> Expiration date </label>
+            <label style={{ fontSize: '15px' , fontWeight: 'bold'}}>Expiration date</label>
             <input
               {...getExpiryDateProps({ onChange: handleChange })}
               placeholder="MM/AA"
@@ -116,7 +117,7 @@ export default function Form() {
             />
           </div>
           <div className="CvC">
-            <label> CVC</label>
+            <label style={{ fontSize: '15px' , fontWeight: 'bold'}}> CVC</label>
             <input
               {...getCVCProps({ onChange: handleChange })}
               name="cvc"
@@ -126,11 +127,15 @@ export default function Form() {
         </div>
         <div className="term">
           <input type="checkbox" onChange={handleCheck} />
-          <p className="TermeConfidentialite">
-            Accept the terms of <Link to="#">confidentiality</Link>
-          </p>
+          <span style={{ fontSize: '12px', fontWeight: 'bold' }}>Accept the terms of confidentiality</span>
+          
         </div>
-        <input disabled={checked} type="submit" value="Valide" className="btn" />
+        <input
+          disabled={checked}
+          type="submit"
+          value="Valide"
+          className="btn"
+        />
       </main>
       <footer>
         <img className="img1" src="/images/methode.jpg" alt="" />

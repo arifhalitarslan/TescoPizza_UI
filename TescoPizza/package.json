@@ -12,16 +12,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-<<<<<<< Updated upstream
-    "@mui/material": "^5.15.18",
-=======
     "@fontsource/roboto": "^5.0.13",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@rsuite/icons": "^1.0.3",
     "emailjs-com": "^3.2.0",
->>>>>>> Stashed changes
     "react": "^18.2.0",
     "react-credit-cards": "^0.8.3",
     "react-dom": "^18.2.0",

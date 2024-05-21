@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Confirmation from "./Pages/Confirmation";
 import Validation from "./Pages/Validation";
 import Form from "./Components/Form";
+import CheckoutPage from "./Pages/CheckoutPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Form/>} />
           <Route path="/Confirmation" element={<Confirmation />} />
           <Route path="/Validation" element={<Validation />} />
+          <Route path="/Checkout" element={<CheckoutPage />} />
         </Routes>
       </BrowserRouter>
     </>

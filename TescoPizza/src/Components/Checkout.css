@@ -1,0 +1,74 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0; /* Default margin'leri sıfırla */
+    ; /* Container'ı ekranın tamamını kaplayacak şekilde ayarla */
+    box-sizing: border-box; /* Padding ve border'ları hesaba kat */
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Öğeleri sol tarafa hizala */
+    width: calc(75% - 40px); /* Container'ın genişliğini ayarla */
+    margin-right: 50px; /* Sağ taraftan boşluk bırak */
+}
+
+.cart-section {
+    width: calc(20% - 40px); /* Sağ bölümün genişliğini ayarla */
+    height: 50%;
+    margin-left: 0px; /* Sol taraftan boşluk bırak */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 60px); /* Öğeleri container'ın genişliğine tam sığacak şekilde ayarla */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px; /* Alt boşluk ekle */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-row .form-group {
+    flex-basis: calc(33.33% - 20px); /* Öğeleri eşit genişlikte ayarla */
+}
+
+
+.form-group input, .form-group select {
+    width: 200%;
+    padding: 10px; /* Increase padding */
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-group {
+    margin-bottom: 0px; /* Form grupları arasındaki boşluğu ayarla */
+}
+.cart-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.cart-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.cart-container ul li {
+    margin-bottom: 5px;
+}
+
+.cart-container p {
+    margin: 5px 0;
+}

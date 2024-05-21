@@ -16,6 +16,7 @@ function App() {
           <Route path="/Confirmation" element={<Confirmation />} />
           <Route path="/Validation" element={<Validation />} />
           <Route path="/Checkout" element={<CheckoutPage />} />
+          <Route path="/Payment" element={<Form />} />
         </Routes>
       </BrowserRouter>
     </>

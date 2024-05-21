@@ -1,57 +1,124 @@
 .checkout-container {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-    margin: 0; /* Default margin'leri sıfırla */
-    ; /* Container'ı ekranın tamamını kaplayacak şekilde ayarla */
-    box-sizing: border-box; /* Padding ve border'ları hesaba kat */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .form-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Öğeleri sol tarafa hizala */
-    width: calc(75% - 40px); /* Container'ın genişliğini ayarla */
-    margin-right: 50px; /* Sağ taraftan boşluk bırak */
+    align-items: flex-start;
+    width: calc(75% - 40px);
+    margin-right: 50px;
+}
+
+.bottom-button-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.green-button:hover {
+    background-color: darkgreen;
+}
+
+.red-button {
+    background-color: #b03060;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+    border-radius: 5px;
+}
+
+.red-button:hover {
+    background-color: #8b2252;
+}
+
+.blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.blue-button:hover {
+    background-color: darkblue;
+}
+
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.orange-button:hover {
+    background-color: darkorange;
 }
 
 .cart-section {
-    width: calc(20% - 40px); /* Sağ bölümün genişliğini ayarla */
+    width: calc(20% - 40px);
     height: 50%;
-    margin-left: 0px; /* Sol taraftan boşluk bırak */
+    margin-left: 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: orange;
+    color: white;
 }
 
 .form-group input,
 .form-group select {
-    width: calc(100% - 60px); /* Öğeleri container'ın genişliğine tam sığacak şekilde ayarla */
+    width: calc(100% - 60px);
     padding: 10px;
     margin-top: 5px;
-    margin-bottom: 0px; /* Alt boşluk ekle */
+    margin-bottom: 0;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
 .form-row .form-group {
-    flex-basis: calc(33.33% - 20px); /* Öğeleri eşit genişlikte ayarla */
+    flex-basis: calc(33.33% - 20px);
 }
 
-
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
     width: 200%;
-    padding: 10px; /* Increase padding */
+    padding: 10px;
     margin-top: 5px;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 .form-group {
-    margin-bottom: 0px; /* Form grupları arasındaki boşluğu ayarla */
+    margin-bottom: 0;
 }
+
 .cart-container {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -67,8 +134,34 @@
 
 .cart-container ul li {
     margin-bottom: 5px;
+    color: black;
 }
 
 .cart-container p {
     margin: 5px 0;
+    color: black;
+}
+
+.small-button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.go-payment-button {
+    margin-top: 20px;
+}
+
+.red-button
+ {
+    background-color:red ;
+}
+.orange-button {
+    background-color: orange;
+}
+
+.orange-button:hover {
+    background-color: rgb(182, 119, 0);
+}
+.red-button:hover{
+    background-color: rgb(142, 0, 0);
 }

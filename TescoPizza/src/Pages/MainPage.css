@@ -1,0 +1,47 @@
+.AllMainPage{
+    display: flex;
+    height: 100vh;
+}
+.NavbarMainPage{
+    /* border: 1px solid black; */
+    width: 10%;
+    height: 100vh;
+    
+}
+.RightAndMiddleMainPage{
+    display: flex;
+    /* border: 1px solid rebeccapurple; */
+    width: 90%;
+}
+.MiddleMainPage{
+    /* border: 1px solid red; */
+    width: 70%;
+    }
+.RightSideMainPage{
+    border: 1px solid green;
+    width: 30%;
+    }
+
+@media(max-width:768px){
+
+    .RightAndMiddleMainPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid rebeccapurple;
+    }
+    .MiddleMainPage{
+        /* border: 1px solid red; */
+        width: 100%;
+        border: 1px solid green;
+        
+        }
+    .RightSideMainPage{
+        width: 100%;   
+        border: 1px solid green;
+            
+       }    
+
+}
+
+

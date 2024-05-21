@@ -9,21 +9,16 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
 
 function Navbar() {
-  
-    {/* Fonksiyonlar buraya yazılacak */}
-
   return (
-    <div className='NavbarContainest'>
-       
-        <div className='NavbarContainer'>
-          <button style={{ fontSize: '35px', color: 'orange' }}><HomeIcon fontSize="inherit" /></button>
-          <button><PersonIcon/></button>
-          <button><AccountBalanceWalletIcon/></button>
-          <button><SettingsIcon/></button>
-          <button><EmailIcon/></button>
-          <button><ChatBubbleIcon/></button>
-        </div>
-
+    <div className='AllNavbarPage' style={{width:'100%'}}>
+     <div className='NavbarButtonsMain'>
+     <button style={{ fontSize: '35px', color: 'orange',marginTop:'200px' }}><HomeIcon fontSize="inherit" /></button>
+           <button><PersonIcon/></button>
+           <button><AccountBalanceWalletIcon/></button>
+           <button><SettingsIcon/></button>
+           <button><EmailIcon/></button>
+           <button><ChatBubbleIcon/></button>
+     </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Validation from "./Pages/Validation";
 import Form from "./Components/Form";
 import CheckoutPage from "./Pages/CheckoutPage";
 import MainPage from "./Pages/MainPage"
+import SettingsPage from "./Pages/SettingsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Validation" element={<Validation />} />
           <Route path="/Checkout" element={<CheckoutPage />} />
           <Route path="/Payment" element={<Form />} />
+          <Route path="/Settings" element={<SettingsPage />} />
         </Routes>
       </BrowserRouter>
     </>

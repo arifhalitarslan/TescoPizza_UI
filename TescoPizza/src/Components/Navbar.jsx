@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className='AllNavbarPage' style={{width:'100%'}}>
      <div className='NavbarButtonsMain'>
-     <button style={{ fontSize: '35px', color: 'orange',marginTop:'200px' }}><HomeIcon fontSize="inherit" /></button>
+     <button style={{ fontSize: '35px', color: 'orange',marginTop:'200px'}}><HomeIcon fontSize="inherit" /></button>
            <button><PersonIcon/></button>
            <button><AccountBalanceWalletIcon/></button>
            <button><SettingsIcon/></button>

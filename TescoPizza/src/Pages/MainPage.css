@@ -4,23 +4,113 @@
 }
 .NavbarMainPage{
     /* border: 1px solid black; */
-    width: 10%;
+    width: 6%;
     height: 100vh;
     
 }
 .RightAndMiddleMainPage{
     display: flex;
     /* border: 1px solid rebeccapurple; */
-    width: 90%;
+    width: 94%;
 }
 .MiddleMainPage{
     /* border: 1px solid red; */
     width: 70%;
     }
-.RightSideMainPage{
-    border: 1px solid green;
-    width: 30%;
+    .MiddleMainPageTitleAndSearch {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
     }
+    
+    .MiddlePageSearch {
+        margin-right: 10%;
+    }
+    
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center; /* İkonu ve input'u dikey olarak ortalar */
+    }
+    
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        border: 1px solid red;
+      
+    }
+    
+    .MiddlePageSearch input {
+        background-color: #B4BCCF;
+        border: none;
+        border-radius: 15px;
+        padding: 10px 10px 10px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+
+    .MiddlePhoto{
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px ;
+    }
+    .MiddlePhoto img{
+        max-width: 90%;
+        position: relative;
+        
+    }
+    .MiddlePhoto button{
+     position: absolute;
+     border-radius: 10px;
+     bottom: 15%;
+     left: 15%;
+     padding: 6px;
+     border: none;
+     background-color:#FF9921 ;
+     color: white;
+    font-size: 13px;
+     
+    } 
+
+    .RightSideMainPage{
+      border: 1px solid green;
+      width: 30%;
+    }
+    .RightSideTitle{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid yellowgreen;
+    
+    }
+    .RightSideTitle p{
+        font-weight: bold;
+        padding: 20% 10%;
+    }
+
+    .RightSideTitle button{
+        border: none;
+        background: none;
+    }
+    .RightSideOrderMenuTitle{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.RightSideOrderMenuTitle a{
+    text-decoration: none;
+    color: #FF9921;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 @media(max-width:768px){
 

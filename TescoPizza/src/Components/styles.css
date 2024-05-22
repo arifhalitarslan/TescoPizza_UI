@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 body {
   /* background-color: #FFA500;  */
+  /* background-image: url('/Users/sinansensev/Desktop/TescoPizza_UI/TescoPizza/src/assets/tescopizzaorange.jpeg');
+    background-size: 200px; 
+    background-repeat: repeat; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    background-blend-mode: lighten; 
   font-family: 'Montserrat', sans-serif;
-  font-weight: tahoma; 
+  font-weight: tahoma;  */
 }
 
 * {
@@ -93,6 +98,7 @@ main .span {
 input {
   margin-top: 14px;
   padding: 5px;
+  color: orange;
 }
 .NomDuClient,
 .NumDeCarte {
@@ -138,7 +144,7 @@ input {
   border: none;
   cursor: pointer;
   background-color: orange;
-  color: #fff;
+  color: white;
 }
 .img1 {
   width: 200px;

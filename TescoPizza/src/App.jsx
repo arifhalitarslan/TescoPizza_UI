@@ -7,6 +7,10 @@ import Form from "./Components/Form";
 import CheckoutPage from "./Pages/CheckoutPage";
 import MainPage from "./Pages/MainPage"
 import SettingsPage from "./Pages/SettingsPage";
+import LoginPage from "./Pages/LoginPage";
+import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
+import ResetPasswordPage from "./Pages/ResetPasswordPage";
+import RegisterPage from "./Pages/RegisterPage";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
           <Route path="/Checkout" element={<CheckoutPage />} />
           <Route path="/Payment" element={<Form />} />
           <Route path="/Settings" element={<SettingsPage />} />
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/Forgot-Password" element={<ForgotPasswordPage />} />
+          <Route path="/Reset-Password" element={<ResetPasswordPage />} />
+          <Route path="/Register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
     </>

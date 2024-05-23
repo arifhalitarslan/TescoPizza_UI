@@ -11,6 +11,7 @@ import LoginPage from "./Pages/LoginPage";
 import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
 import ResetPasswordPage from "./Pages/ResetPasswordPage";
 import RegisterPage from "./Pages/RegisterPage";
+import PizzaDetailed from "./Pages/PizzaDetailed";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="/Forgot-Password" element={<ForgotPasswordPage />} />
           <Route path="/Reset-Password" element={<ResetPasswordPage />} />
           <Route path="/Register" element={<RegisterPage />} />
+          <Route path="/PizzaDetailed" element={<PizzaDetailed />} />
+
         </Routes>
       </BrowserRouter>
     </>

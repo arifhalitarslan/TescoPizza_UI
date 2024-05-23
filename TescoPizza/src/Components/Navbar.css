@@ -4,6 +4,7 @@
   align-items: center;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   height: 100vh;
+
 }
 .NavbarButtonsMain{
   display: flex;
@@ -11,9 +12,10 @@
   justify-content:center ;
   width: 50%;
   align-items: center;
+  height: 100%;
 }
 .NavbarButtonsMain button{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border: none;
   background: none;
   color: #B4BCCF;

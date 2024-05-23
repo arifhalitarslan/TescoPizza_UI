@@ -49,37 +49,50 @@
         width: 100%;
         box-sizing: border-box;
     }
-    
-
-    .MiddlePhoto{
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin-bottom: 20px ;
-    }
-    .MiddlePhoto img{
-        max-width: 90%;
-        position: relative;
-        
-    }
-    .MiddlePhoto button{
-     position: absolute;
-     border-radius: 10px;
-     bottom: 15%;
-     left: 15%;
-     padding: 6px;
-     border: none;
-     background-color:#FF9921 ;
-     color: white;
-    font-size: 13px;
-     
+    .PizzaDetailedCard{
+   
+      padding: 40px;
     }
     
     .CardsMainHomePage{
         max-height: 100%;
     }
+    .MiddlePageAllPizzaCards{
+        background-color: white;
+        border-radius: 40px;
+        margin: 0px 20px;
+    }
+
+.PizzaDetailedUnderPizzaCard{
+    display: flex;
+    padding: 40px;
+    align-items: center;  
+}
+
+.AllMalzemeAddPizzaDetailed{
+    
+    width: 50%;
+}
+.MalzemeAddPizzaDetailed{
+    background-color: #FFDFC1 ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.AddMalzemeRight{
+    background-color: #FFDFC1;
+    padding: 80px;
+    margin-left: 20%;
+}
+.BottomAddButton{
+  float: right;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+.BottomAddButton button{
+  background-color: white;
+  padding: 5px 15px;
+}
 
     .RightSideMainPage{
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);

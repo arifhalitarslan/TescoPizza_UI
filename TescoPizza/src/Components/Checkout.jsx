@@ -63,9 +63,9 @@ const Checkout = () => {
 
     return (
         <div className="checkout-container">
-            <div className="form-section">
+            <div className="checkoutform-section">
                 <form>
-                    <h2>Personal Information</h2>
+                    <h2 className='bold'>PERSONAL INFORMATION</h2>
                     <div className="form-row">
                         <div className="form-group">
                             <label>First Name:</label>
@@ -115,7 +115,7 @@ const Checkout = () => {
                     </div>
                 </form>
                 <form>
-                    <h2>Billing Address</h2>
+                    <h2 className='bold'>BILLING ADDRESS</h2>
                     <div className="form-group">
                         <label>Address:</label>
                         <input type="text" name="billingAddress" required />
@@ -130,7 +130,7 @@ const Checkout = () => {
                     </div>
                 </form>
                 <form>
-                    <h2>Cargo Information</h2>
+                    <h2 className='bold'>CARGO INFORMATION</h2>
                     <div className="form-group">
                         <label>Cargo Option:</label>
                         <select name="cargo">
@@ -141,7 +141,7 @@ const Checkout = () => {
                 </form>
             </div>
             <div className="cart-section">
-                <h2>Current Cart</h2>
+                <h2 className='bold'>Current Cart</h2>
                 <div className="cart-container">
                     <ul>
                         {cart.map(item => (

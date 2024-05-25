@@ -13,14 +13,14 @@ const Tabs = () => {
     };
 
     return (
-        <div className="mx-10 my-5">
-            <h1 className="text-3xl font-bold">Settings</h1>
+        <div className="tabs-container mx-10 my-5">
+            <h1 className="tabs-title text-3xl font-bold">Settings</h1>
 
-            <ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none pl-0 mb-4" id="tabs-tab" role="tablist">
-                <li className="nav-item" role="presentation">
+            <ul className="tabs-nav nav nav-tabs flex flex-col md:flex-row flex-wrap list-none pl-0 mb-4" id="tabs-tab" role="tablist">
+                <li className="tabs-nav-item nav-item" role="presentation">
                     <a
                         href="#tabs-home"
-                        className={`nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-orange px-6 py-3 my-2 hover:border-orange hover:bg-gray-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-home' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
+                        className={`tabs-nav-link nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-orange px-6 py-3 my-2 hover:border-orange hover:bg-gray-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-home' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
                         id="tabs-home-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#tabs-home"
@@ -30,14 +30,13 @@ const Tabs = () => {
                         onClick={() => handleClick('tabs-home')}
                     >
                         <span className="inline-block mr-2">Profile</span>
-                        
                     </a>
                 </li>
 
-                <li className="nav-item" role="presentation">
+                <li className="tabs-nav-item nav-item" role="presentation">
                     <a
                         href="#tabs-profile"
-                        className={`nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-orange px-6 py-3 my-2 hover:border-orange hover:bg-orange-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-profile' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
+                        className={`tabs-nav-link nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-orange px-6 py-3 my-2 hover:border-orange hover:bg-orange-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-profile' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
                         id="tabs-profile-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#tabs-profile"
@@ -50,10 +49,10 @@ const Tabs = () => {
                     </a>
                 </li>
 
-                <li className="nav-item" role="presentation">
+                <li className="tabs-nav-item nav-item" role="presentation">
                     <a
                         href="#tabs-messages"
-                        className={`nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-orange hover:bg-gray-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-messages' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
+                        className={`tabs-nav-link nav-link block font-medium text-xm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-orange hover:bg-gray-100 focus:border-orange duration-300 ease-in-out ${activeTab === 'tabs-messages' ? 'bg-orange-500 text-white' : 'text-orange-700'}`}
                         id="tabs-messages-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#tabs-messages"
@@ -67,27 +66,27 @@ const Tabs = () => {
                 </li>
             </ul>
 
-            <div className="tab-content" id="tabs-tabContent">
+            <div className="tabs-content tab-content" id="tabs-tabContent">
                 <div
-                    className={`tab-pane fade show ${activeTab === 'tabs-home' ? 'active' : ''}`}
+                    className={`tabs-pane tab-pane fade show ${activeTab === 'tabs-home' ? 'active' : ''}`}
                     id="tabs-home"
                     role="tabpanel"
                     aria-labelledby="tabs-home-tab"
                 >
-                    <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
-                        <div className=" flex flex-col justify-left md:items-start w-full px-2 py-5">
-                            <h1 className="text-1xl text-gray-300 md:flex mb-5">
+                    <div className="tabs-pane-content grid md:grid-cols-2 max-w-[1240px] m-auto">
+                        <div className="tabs-pane-content-left flex flex-col justify-left md:items-start w-full px-2 py-5">
+                            <h1 className="tabs-pane-heading text-1xl text-gray-300 md:flex mb-5">
                                 GENERAL INFORMATION
                             </h1>
-                            <div className="flex items-center">
-                                <div className="flex ">
+                            <div className="tabs-profile-picture-container flex items-center">
+                                <div className="tabs-profile-picture-wrapper flex ">
                                     <img
                                         src={userLogo}
-                                        className="rounded-full w-32 mr-10 mb-10"
+                                        className="tabs-profile-picture rounded-full w-32 mr-10 mb-10"
                                         alt="Avatar"
                                     />
                                 </div>
-                                <div className="flex flex-col justify-items-start">
+                                <div className="tabs-profile-upload-container flex flex-col justify-items-start">
                                     <h1 className="text-gray-700">Add a profile picture</h1>
                                     <p className="py-2 text-sm font-medium text-gray-300">
                                         Please upload a square image (1:1 aspect ratio).
@@ -95,7 +94,7 @@ const Tabs = () => {
 
                                     <a
                                         href="#!"
-                                        className="py-3 text-xl text-orange-400 hover:text-orange-500 transition duration-300 ease-in-out mb-4"
+                                        className="tabs-upload-link py-3 text-xl text-orange-400 hover:text-orange-500 transition duration-300 ease-in-out mb-4"
                                     >
                                         <FontAwesomeIcon
                                             icon={faArrowAltCircleDown}
@@ -104,161 +103,154 @@ const Tabs = () => {
                                         Upload
                                     </a>
                                 </div>
-
                             </div>
                             <label
-                                for="input"
-                                className="py-2 block mb-2 text-sm font-medium text-gray-700 "
+                                htmlFor="input"
+                                className="tabs-input-label py-2 block mb-2 text-sm font-medium text-gray-700 "
                             >
                                 Enter your trader name{" "}
                             </label>
                             <input
                                 type="text"
-                                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-300 bg-gray-50 bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                className="tabs-input form-control block w-full px-3 py-1.5 text-base font-normal text-gray-300 bg-gray-50 bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                 id="exampleFormControlInput1"
                                 placeholder="Username"
-                                maxlength="30"
+                                maxLength="30"
                             />
-                            <p className="py-2 mb-10 text-gray-500">
+                            <p className="tabs-input-description py-2 mb-10 text-gray-500">
                                 This will be displayed as your creator name on the TesCo Pizza.
                             </p>
                             <label
-                                for="message"
-                                className="py-2 block mb-2 text-sm font-medium text-gray-700 "
+                                htmlFor="message"
+                                className="tabs-address-label py-2 block mb-2 text-sm font-medium text-gray-700 "
                             >
                                 Your Address
                             </label>
                             <input
                                 type="text"
                                 id="large-input"
-                                className="form-control font-normal block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-solid border-gray-300 bg-clip-padding sm:text-md  transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                placeholder="Please entry your address..."
-                                maxlength="500"
+                                className="tabs-address-input form-control font-normal block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-solid border-gray-300 bg-clip-padding sm:text-md  transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Please enter your address..."
+                                maxLength="500"
                             ></input>{" "}
-                            <p className="py-2 mb-10  text-gray-500">
-                                This won't be displayed as to all users an followers on the
+                            <p className="tabs-address-description py-2 mb-10  text-gray-500">
+                                This won't be displayed to all users and followers on the
                                 TesCo Pizza.
                             </p>
                             <button
                                 type="button"
-                                className="mb-2 w-full inline-block px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-orange -600 hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-lg transition duration-150 ease-in-out"
-                                >
+                                className="tabs-update-button mb-2 w-full inline-block px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-orange-600 hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-lg transition duration-150 ease-in-out"
+                            >
                                 Update my profile
-                                </button>                     </div>
+                            </button>                     
+                        </div>
+                    </div>
                 </div>
             
-            </div>
-
-            <div
-                className={`tab-pane fade ${activeTab === 'tabs-profile' ? 'show active' : ''}`}
-                id="tabs-profile"
-                role="tabpanel"
-                aria-labelledby="tabs-profile-tab"
-            >
-                <div className="grid md:grid-cols-2 max-w-[1240px] m-auto ">
-                        <div className="flex flex-col  justify-left md:items-start w-full px-2 py-8 border-r border-gray-200">
-                            <h1 className="py-3 text-2xl md:text-3xl font-bold ">
+                <div
+                    className={`tabs-pane tab-pane fade ${activeTab === 'tabs-profile' ? 'show active' : ''}`}
+                    id="tabs-profile"
+                    role="tabpanel"
+                    aria-labelledby="tabs-profile-tab"
+                >
+                    <div className="tabs-pane-content grid md:grid-cols-2 max-w-[1240px] m-auto ">
+                        <div className="tabs-notifications-left flex flex-col justify-left md:items-start w-full px-2 py-8 border-r border-gray-200">
+                            <h1 className="tabs-notifications-heading py-3 text-2xl md:text-3xl font-bold ">
                                 Your Notifications{" "}
                             </h1>
-                            <div className="grid md:grid-cols-2  border-t border-b border-gray-200">
-                                <div className="flex flex-col  justify-left md:items-start w-full   py-5 ">
+                            <div className="tabs-notifications-item grid md:grid-cols-2  border-t border-b border-gray-200">
+                                <div className="tabs-notification-description flex flex-col justify-left md:items-start w-full py-5 ">
                                     <p className="text-md ">
                                         Notification: General Account Information
                                     </p>
                                     <p className="pt-2 text-sm text-gray-400">
-                                        Delivered By:Email{" "}
+                                        Delivered By: Email{" "}
                                     </p>
                                 </div>
                                 <div
-                                    className="justify-right md:items-start w-full px-10  py-6 scale-125
-
-"
+                                    className="tabs-notification-icon justify-right md:items-start w-full px-10 py-6 scale-125"
                                 >
                                     <FontAwesomeIcon icon={faXmarkCircle} />
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2 ">
-                                <div className=" flex flex-col justify-left md:items-start w-full py-8">
+                            <div className="tabs-notification-preferences grid md:grid-cols-2 ">
+                                <div className="tabs-notification-type flex flex-col justify-left md:items-start w-full py-8">
                                     <select
-                                        id="countries"
-                                        className="bg-white-50 border border-orange-300  text-sm rounded-lg pr-10  focus:ring-white-500 focus:border-orange-500 block w-full p-2.5 dark:bg-white-700  "
+                                        id="notification-types"
+                                        className="tabs-select bg-white-50 border border-orange-300 text-sm rounded-lg pr-10 focus:ring-white-500 focus:border-orange-500 block w-full p-2.5"
                                     >
                                         <option selected>Live Bot Order Information</option>
-                                        <option value="a">Auto Bill Informations</option>
+                                        <option value="a">Auto Bill Information</option>
                                         <option value="b">Delivery Information</option>
                                         <option value="c">TesCo Club Information</option>
                                         <option value="d">Sales Information</option>
                                     </select>
                                 </div>
-                                <div className=" flex flex-col justify-right md:items-start w-full pl-4 py-8 ">
+                                <div className="tabs-notification-method flex flex-col justify-right md:items-start w-full pl-4 py-8 ">
                                     <select
-                                        id="countries"
-                                        className="bg-white-50 border border-white-300  text-sm rounded-lg focus:ring-white-500 focus:border-white-500 block w-full p-2.5 dark:bg-white-700   "
+                                        id="notification-methods"
+                                        className="tabs-select bg-white-50 border border-white-300 text-sm rounded-lg focus:ring-white-500 focus:border-white-500 block w-full p-2.5"
                                     >
-                                        
                                         <option selected="a">Email</option>
-                                        
                                         <option value="c">SMS</option>
-                                        
                                     </select>
                                 </div>
                             </div>
-                            <p>Information related on your live bots orders</p>
+                            <p>Information related to your live bot orders</p>
                             <button
                                 type="button"
-                                className="my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
+                                className="tabs-save-preferences my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
                             >
                                 Save Preferences
                             </button>
                         </div>
 
-                        <div className="flex flex-col  justify-left md:items-start w-full px-2 py-8 ">
-                            
-                            <div className="grid md:grid-cols-2  border-t border-b border-gray-200">
-                                <div className="flex flex-col  justify-left md:items-start w-full   py-5 ">
+                        <div className="tabs-notifications-right flex flex-col justify-left md:items-start w-full px-2 py-8 ">
+                            <div className="tabs-notification-method-item grid md:grid-cols-2 border-t border-b border-gray-200">
+                                <div className="tabs-notification-method-description flex flex-col justify-left md:items-start w-full py-5 ">
                                     <div className="flex items-center flex-row">
                                         <img
                                             src={emailLogo}
                                             aria-hidden="true"
                                             focusable="false"
                                             data-prefix="fas"
-                                            className="w-10 h-8 text-center mr-5"
+                                            className="tabs-notification-method-icon w-10 h-8 text-center mr-5"
                                             role="img"
                                             viewBox="0 0 448 512"
                                         ></img>
                                         Email
                                     </div>
                                 </div>
-                                <div className="flex flex-col  justify-right md:items-start w-full   py-5 ">
+                                <div className="tabs-notification-method-setup flex flex-col justify-right md:items-start w-full py-5 ">
                                     <button
                                         type="button"
-                                        className="text-gray-900 px-10 ml-20 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md  py-2.5  mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                                        className="tabs-setup-button text-gray-900 px-10 ml-20 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md py-2.5 mb-2"
                                     >
                                         Set Up
                                     </button>
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2  ">
-                                <div className="flex flex-col  justify-left md:items-start w-full   py-5 ">
+                            <div className="tabs-notification-method-item grid md:grid-cols-2 ">
+                                <div className="tabs-notification-method-description flex flex-col justify-left md:items-start w-full py-5 ">
                                     <div className="flex items-center flex-row">
                                         <img
                                             src={telegramLogo}
                                             aria-hidden="true"
                                             focusable="false"
                                             data-prefix="fas"
-                                            className="w-10 h-8 text-center mr-5"
+                                            className="tabs-notification-method-icon w-10 h-8 text-center mr-5"
                                             role="img"
                                             viewBox="0 0 448 512"
                                         ></img>
                                         Telegram
                                     </div>
                                 </div>
-                                <div className="flex flex-col  justify-right md:items-start w-full   py-5 ">
+                                <div className="tabs-notification-method-setup flex flex-col justify-right md:items-start w-full py-5 ">
                                     <button
                                         type="button"
-                                        className="text-gray-900 px-10 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md py-2.5 ml-20 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                                        className="tabs-setup-button text-gray-900 px-10 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md py-2.5 ml-20 mb-2"
                                     >
                                         Set Up
                                     </button>
@@ -268,43 +260,40 @@ const Tabs = () => {
                     </div>
                 </div>
 
-            <div
-                className={`tab-pane fade ${activeTab === 'tabs-messages' ? 'show active' : ''}`}
-                id="tabs-messages"
-                role="tabpanel"
-                aria-labelledby="tabs-messages-tab"
-            >
-                <div className="grid md:grid-cols-2 max-w-[1240px] m-auto text-gray-500 ">
-                        <div className="flex flex-col  justify-left md:items-start w-full px-2 py-8 border-r border-gray-200">
-                            <p className="py-3 text-md md:text-xl font-bold ">PASSWORD </p>
-                            <p className="text-sm">Change your password to a new one.</p>
+                <div
+                    className={`tabs-pane tab-pane fade ${activeTab === 'tabs-messages' ? 'show active' : ''}`}
+                    id="tabs-messages"
+                    role="tabpanel"
+                    aria-labelledby="tabs-messages-tab"
+                >
+                    <div className="tabs-pane-content grid md:grid-cols-2 max-w-[1240px] m-auto text-gray-500 ">
+                        <div className="tabs-security-password flex flex-col justify-left md:items-start w-full px-2 py-8 border-r border-gray-200">
+                            <p className="tabs-security-password-heading py-3 text-md md:text-xl font-bold ">PASSWORD </p>
+                            <p className="tabs-security-password-description text-sm">Change your password to a new one.</p>
                             <button
                                 type="button"
-                                className=" my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
+                                className="tabs-security-password-button my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
                             >
                                 Change password
                             </button>{" "}
                         </div>
-                        <div className="flex flex-col  justify-left md:items-start w-full px-2 py-8 ">
-                            <p className="py-3 text-md md:text-xl font-bold ">
+                        <div className="tabs-security-mfa flex flex-col justify-left md:items-start w-full px-2 py-8 ">
+                            <p className="tabs-security-mfa-heading py-3 text-md md:text-xl font-bold ">
                                 MULTI-FACTOR AUTHENTICATION{" "}
                             </p>
-                            <p className="text-sm">Setup or remove MFA devices.</p>
+                            <p className="tabs-security-mfa-description text-sm">Setup or remove MFA devices.</p>
                             <button
                                 type="button"
-                                className=" my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
+                                className="tabs-security-mfa-button my-4 inline-block px-6 py-3 bg-orange-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out"
                             >
                                 Setup or Remove
                             </button>{" "}
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
-
-);
+    );
 };
 
 export default Tabs;
-                                
-                                

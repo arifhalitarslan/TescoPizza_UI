@@ -4,7 +4,7 @@ import '../Components/styles.css';
 
 const PayementPage = () => {
     return (
-        <div className="checkout-page">
+        <div className="payment-page">
             <Form />
         </div>
     );

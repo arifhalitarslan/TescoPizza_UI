@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Link, useNavigate } from "react-router-dom";
 import { GrSecure } from "react-icons/gr";
@@ -9,6 +9,13 @@ export default function Form() {
   const form = useRef();
   const navigate = useNavigate();
   const { meta, getExpiryDateProps, getCVCProps } = usePaymentInputs();
+
+  useEffect(() => {
+    document.body.classList.add("paymentbody");
+    return () => {
+      document.body.classList.remove("paymentbody");
+    };
+  }, []);
 
   const [checked, setChecked] = useState(true);
   const [cardNumber, setCardNumber] = useState("");
@@ -144,3 +151,4 @@ export default function Form() {
     </form>
   );
 }
+

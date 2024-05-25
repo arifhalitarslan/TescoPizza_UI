@@ -1,185 +1,218 @@
-.AllMainPage{
+.AllMainPage {
     display: flex;
     height: 100%;
 }
-.NavbarMainPage{
+
+.NavbarMainPage {
     width: 6%;
     height: 100%;
-    
+
 }
-.RightAndMiddleMainPage{
+
+.RightAndMiddleMainPage {
     display: flex;
     width: 94%;
 }
-.MiddleMainPage{
+
+.MiddleMainPage {
     width: 70%;
     background-color: #F5F5F5;
-    }
-    .MiddleMainPageTitleAndSearch {
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .MiddlePageSearch {
-        margin-right: 10%;
-    }
-    
-    .input-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    
-    .search-icon {
-        position: absolute;
-        left: 10px;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        
-      
-    }
-    
-    .MiddlePageSearch input {
-        background-color: #B4BCCF;
-        border: none;
-        border-radius: 15px;
-        padding: 10px 10px 10px 40px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .PizzaDetailedCard{
-   
-      padding: 40px;
-    }
-    
-    .CardsMainHomePage{
-        max-height: 100%;
-    }
-    .MiddlePageAllPizzaCards{
-        background-color: white;
-        border-radius: 40px;
-        margin: 0px 20px;
-    }
-
-.PizzaDetailedUnderPizzaCard{
-    display: flex;
-    padding: 40px;
-    align-items: center;  
 }
 
-.AllMalzemeAddPizzaDetailed{
-    
+.MiddleMainPageTitleAndSearch {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MiddlePageSearch {
+    margin-right: 10%;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.MiddlePageSearch input {
+    background-color: #B4BCCF;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.PizzaDetailedCard {
+
+    padding: 40px;
+}
+
+.cardArif {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     width: 50%;
 }
-.MalzemeAddPizzaDetailed{
-    background-color: #FFDFC1 ;
+
+.CardsMainHomePage {
+    max-height: 100%;
+}
+
+.MiddlePageAllPizzaCardsDetailed {
+    background-color: white;
+    border-radius: 40px;
+    margin: 0px 20px;
+}
+
+.PizzaDetailedDescPizzaAll {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.PizzaDetailedDescPizzaAllMallzemos {
+    display: flex;
+    flex-direction: column;
+}
+
+.PizzaDetailedUnderPizzaCard {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+.AllMalzemeAddPizzaDetailed {
+
+    width: 50%;
+}
+
+.MalzemeAddPizzaDetailed {
+    background-color: #FFDFC1;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
 }
-.AddMalzemeRight{
+
+.AddMalzemeRight {
     background-color: #FFDFC1;
     padding: 80px;
     margin-left: 20%;
 }
-.BottomAddButton{
-  float: right;
-  margin-right: 5%;
-  margin-top: 10px;
-}
-.BottomAddButton button{
-  background-color: white;
-  padding: 5px 15px;
+
+.BottomAddButton {
+    float: right;
+    margin-right: 5%;
+    margin-top: 10px;
 }
 
-    .RightSideMainPage{
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      width: 30%;
-      padding: 0px 15px;
-    }
-    .RightSideTitle{
-        display: flex;
-        justify-content: space-between;
-  
-    
-    }
-    .RightSideTitle p{
-        font-weight: bold;
-        padding: 20% 10%;
-    }
+.BottomAddButton button {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
 
-    .RightSideTitle button{
-        border: none;
-        background: none;
-        margin-right: 7%;
-    }
-  
+.RightSideMainPage {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 0px 15px;
+}
 
-    .RightSideOrderDetailed{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-    }
-    .RightSideOrderMenuTitle{
+.RightSideTitle {
+    display: flex;
+    justify-content: space-between;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-.RightSideOrderMenuTitle a{
+
+}
+
+.RightSideTitle p {
+    font-weight: bold;
+    padding: 20% 10%;
+}
+
+.RightSideTitle button {
+    border: none;
+    background: none;
+    margin-right: 7%;
+}
+
+
+.RightSideOrderDetailed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.RightSideOrderMenuTitle {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.RightSideOrderMenuTitle a {
     text-decoration: none;
     color: #FF9921;
     align-items: center;
     justify-content: center;
-    
-}
-.CheckOutButton{
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-.CheckOutButton button{
-    padding: 8px 15px ;
-    background-color:#FF9921 ;
-    color: white;
-    border-radius:15px;
+
 }
 
-.RightSideAddressAndPrice{
+.CheckOutButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.CheckOutButton button {
+    padding: 8px 15px;
+    background-color: #FF9921;
+    color: white;
+    border-radius: 15px;
+}
+
+.RightSideAddressAndPrice {
     margin-top: 10%;
     padding: 0px 12px;
 }
-.RightSideTotalPrice{
+
+.RightSideTotalPrice {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3%;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .RightAndMiddleMainPage{
+    .RightAndMiddleMainPage {
         display: flex;
         flex-direction: column;
         width: 100%;
 
     }
-    .MiddleMainPage{
+
+    .MiddleMainPage {
         /* border: 1px solid red; */
         width: 100%;
-      
-        
-        }
-    .RightSideMainPage{
-        width: 100%;   
-       
-            
-       }    
+
+
+    }
+
+    .RightSideMainPage {
+        width: 100%;
+
+
+    }
 
 }
-
-

@@ -18,14 +18,14 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Form/>} />
+        <Route path="/" element={<LoginPage />} />
           <Route path="/Home" element={<MainPage/>} />
           <Route path="/Confirmation" element={<Confirmation />} />
           <Route path="/Validation" element={<Validation />} />
           <Route path="/Checkout" element={<CheckoutPage />} />
           <Route path="/Payment" element={<Form />} />
           <Route path="/Settings" element={<SettingsPage />} />
-          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/" element={<Form/>} />
           <Route path="/Forgot-Password" element={<ForgotPasswordPage />} />
           <Route path="/Reset-Password" element={<ResetPasswordPage />} />
           <Route path="/Register" element={<RegisterPage />} />

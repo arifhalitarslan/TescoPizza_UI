@@ -1,172 +1,244 @@
-.AllMainPage{
+.AllMainPage {
     display: flex;
     height: 100%;
 }
-.NavbarMainPage{
+
+.NavbarMainPage {
     width: 6%;
     height: 100%;
-    
+
 }
-.RightAndMiddleMainPage{
+
+.RightAndMiddleMainPage {
     display: flex;
     width: 94%;
 }
-.MiddleMainPage{
+
+.MiddleMainPage {
     width: 70%;
     background-color: #F5F5F5;
-    }
-    .MiddleMainPageTitleAndSearch {
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .MiddlePageSearch {
-        margin-right: 10%;
-    }
-    
-    .input-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    
-    .search-icon {
-        position: absolute;
-        left: 10px;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        
-      
-    }
-    
-    .MiddlePageSearch input {
-        background-color: #B4BCCF;
-        border: none;
-        border-radius: 15px;
-        padding: 10px 10px 10px 40px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
 
-    .MiddlePhoto{
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin-bottom: 20px ;
-    }
-    .MiddlePhoto img{
-        max-width: 90%;
-        position: relative;
-        
-    }
-    .MiddlePhoto button{
-     position: absolute;
-     border-radius: 10px;
-     bottom: 15%;
-     left: 15%;
-     padding: 6px;
-     border: none;
-     background-color:#FF9921 ;
-     color: white;
+}
+
+
+.MiddleMainPageTitleAndSearch {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MiddlePageSearch {
+    margin-right: 10%;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+
+}
+
+.MiddlePageSearch input {
+    background-color: #B4BCCF;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.MiddlePhoto {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.MiddlePhoto img {
+    max-width: 90%;
+    position: relative;
+
+}
+
+.MiddlePhoto button {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 15%;
+    left: 15%;
+    padding: 6px;
+    border: none;
+    background-color: #FF9921;
+    color: white;
     font-size: 13px;
-     
-    }
-    
-    .CardsMainHomePage{
-        max-height: 100%;
-    }
 
-    .RightSideMainPage{
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      width: 30%;
-      padding: 0px 15px;
-    }
-    .RightSideTitle{
-        display: flex;
-        justify-content: space-between;
-  
-    
-    }
-    .RightSideTitle p{
-        font-weight: bold;
-        padding: 20% 10%;
-    }
+}
 
-    .RightSideTitle button{
-        border: none;
-        background: none;
-        margin-right: 7%;
-    }
-  
 
-    .RightSideOrderDetailed{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-    }
-    .RightSideOrderMenuTitle{
+.CardsMainHomePage {
+    max-height: 100%;
+}
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-.RightSideOrderMenuTitle a{
+.RightSideMainPage {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 0px 15px;
+}
+
+.RightSideTitle {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.RightSideTitle p {
+    font-weight: bold;
+    padding: 20% 10%;
+}
+
+.RightSideTitle button {
+    border: none;
+    background: none;
+    margin-right: 7%;
+}
+
+.kart1 {
+    background-color: #F5F5F5;
+    border: none;
+}
+
+.cardYusuf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+
+}
+
+.imagePizzaMainPage {
+    border-radius: 50%;
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+}
+
+.titlePizzaHomePageNN {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.UnderCardDescriptionAndButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.UnderCardDescriptionButton button {
+    border-radius: 16px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.RightSideOrderDetailed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.RightSideOrderMenuTitle {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.RightSideOrderMenuTitle a {
     text-decoration: none;
     color: #FF9921;
     align-items: center;
     justify-content: center;
-    
-}
-.CheckOutButton{
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-.CheckOutButton button{
-    padding: 8px 15px ;
-    background-color:#FF9921 ;
-    color: white;
-    border-radius:15px;
+
 }
 
-.RightSideAddressAndPrice{
+.RightSideBarPizzaorderdetailedDescAndQuant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.QuantityOrderPageDetailed {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.QuantityOrderPageDetailed button {
+    padding: 2px;
+    background-color: white;
+}
+
+.CheckOutButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.CheckOutButton button {
+    padding: 8px 15px;
+    background-color: #FF9921;
+    color: white;
+    border-radius: 15px;
+}
+
+.RightSideAddressAndPrice {
     margin-top: 10%;
     padding: 0px 12px;
 }
-.RightSideTotalPrice{
+
+.RightSideTotalPrice {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3%;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .RightAndMiddleMainPage{
+    .RightAndMiddleMainPage {
         display: flex;
         flex-direction: column;
         width: 100%;
 
     }
-    .MiddleMainPage{
+
+    .MiddleMainPage {
         /* border: 1px solid red; */
         width: 100%;
-      
-        
-        }
-    .RightSideMainPage{
-        width: 100%;   
-       
-            
-       }    
+
+
+    }
+
+    .RightSideMainPage {
+        width: 100%;
+
+
+    }
 
 }
-
-

@@ -31,13 +31,13 @@
     margin-right: 10%;
 }
 
-.input-container {
+.inputArif {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.search-icon {
+.searchYusuf {
     position: absolute;
     left: 10px;
     align-items: center;

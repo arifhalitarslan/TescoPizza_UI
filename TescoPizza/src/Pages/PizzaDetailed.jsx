@@ -30,8 +30,8 @@ function PizzaDetailed() {
               <p style={{ fontWeight: "bold" }}>Welcome Back</p>
             </div>
             <div className="MiddlePageSearch">
-              <div className="input-container">
-                <SearchIcon style={{ color: '#61656F' }} className="search-icon" />
+              <div className="input-container inputArif">
+                <SearchIcon style={{ color: '#61656F' }} className="search-icon inputYusuf" />
                 <input style={{ color: '#61656F', backgroundColor: '#B4BCCF' }} type="text" placeholder="Search" />
               </div>
             </div>

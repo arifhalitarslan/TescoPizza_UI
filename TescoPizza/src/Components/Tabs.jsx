@@ -4,6 +4,7 @@ import { faArrowAltCircleDown, faXmarkCircle } from "@fortawesome/free-regular-s
 import emailLogo from "../assets/email.png";
 import telegramLogo from "../assets/telegram.png";
 import userLogo from "../assets/IMG_5120.jpg";
+import "./Tabs.css";
 
 const Tabs = () => {
     const [activeTab, setActiveTab] = useState('tabs-home');
@@ -79,7 +80,9 @@ const Tabs = () => {
                                 GENERAL INFORMATION
                             </h1>
                             <div className="tabs-profile-picture-container flex items-center">
+                                <h1 className="text-gray-700">Profile Photo</h1>
                                 <div className="tabs-profile-picture-wrapper flex ">
+
                                     <img
                                         src={userLogo}
                                         className="tabs-profile-picture rounded-full w-32 mr-10 mb-10"
@@ -87,7 +90,7 @@ const Tabs = () => {
                                     />
                                 </div>
                                 <div className="tabs-profile-upload-container flex flex-col justify-items-start">
-                                    <h1 className="text-gray-700">Add a profile picture</h1>
+
                                     <p className="py-2 text-sm font-medium text-gray-300">
                                         Please upload a square image (1:1 aspect ratio).
                                     </p>
@@ -108,7 +111,7 @@ const Tabs = () => {
                                 htmlFor="input"
                                 className="tabs-input-label py-2 block mb-2 text-sm font-medium text-gray-700 "
                             >
-                                Enter your trader name{" "}
+                                Enter Your Username{" "}
                             </label>
                             <input
                                 type="text"
@@ -142,11 +145,11 @@ const Tabs = () => {
                                 className="tabs-update-button mb-2 w-full inline-block px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-orange-600 hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-lg transition duration-150 ease-in-out"
                             >
                                 Update my profile
-                            </button>                     
+                            </button>
                         </div>
                     </div>
                 </div>
-            
+
                 <div
                     className={`tabs-pane tab-pane fade ${activeTab === 'tabs-profile' ? 'show active' : ''}`}
                     id="tabs-profile"
@@ -209,52 +212,13 @@ const Tabs = () => {
                         <div className="tabs-notifications-right flex flex-col justify-left md:items-start w-full px-2 py-8 ">
                             <div className="tabs-notification-method-item grid md:grid-cols-2 border-t border-b border-gray-200">
                                 <div className="tabs-notification-method-description flex flex-col justify-left md:items-start w-full py-5 ">
-                                    <div className="flex items-center flex-row">
-                                        <img
-                                            src={emailLogo}
-                                            aria-hidden="true"
-                                            focusable="false"
-                                            data-prefix="fas"
-                                            className="tabs-notification-method-icon w-10 h-8 text-center mr-5"
-                                            role="img"
-                                            viewBox="0 0 448 512"
-                                        ></img>
-                                        Email
-                                    </div>
+
                                 </div>
-                                <div className="tabs-notification-method-setup flex flex-col justify-right md:items-start w-full py-5 ">
-                                    <button
-                                        type="button"
-                                        className="tabs-setup-button text-gray-900 px-10 ml-20 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md py-2.5 mb-2"
-                                    >
-                                        Set Up
-                                    </button>
-                                </div>
+
                             </div>
 
                             <div className="tabs-notification-method-item grid md:grid-cols-2 ">
-                                <div className="tabs-notification-method-description flex flex-col justify-left md:items-start w-full py-5 ">
-                                    <div className="flex items-center flex-row">
-                                        <img
-                                            src={telegramLogo}
-                                            aria-hidden="true"
-                                            focusable="false"
-                                            data-prefix="fas"
-                                            className="tabs-notification-method-icon w-10 h-8 text-center mr-5"
-                                            role="img"
-                                            viewBox="0 0 448 512"
-                                        ></img>
-                                        Telegram
-                                    </div>
-                                </div>
-                                <div className="tabs-notification-method-setup flex flex-col justify-right md:items-start w-full py-5 ">
-                                    <button
-                                        type="button"
-                                        className="tabs-setup-button text-gray-900 px-10 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-md py-2.5 ml-20 mb-2"
-                                    >
-                                        Set Up
-                                    </button>
-                                </div>
+
                             </div>
                         </div>
                     </div>

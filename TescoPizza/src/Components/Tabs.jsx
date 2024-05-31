@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleDown, faXmarkCircle } from "@fortawesome/free-regular-svg-icons";
-import emailLogo from "../assets/email.png";
-import telegramLogo from "../assets/telegram.png";
 import userLogo from "../assets/IMG_5120.jpg";
 import "./Tabs.css";
 

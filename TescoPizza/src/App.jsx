@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Confirmation from "./Pages/Confirmation";
@@ -12,6 +12,7 @@ import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
 import ResetPasswordPage from "./Pages/ResetPasswordPage";
 import RegisterPage from "./Pages/RegisterPage";
 import PizzaDetailed from "./Pages/PizzaDetailed";
+import NotificationPage from "./Pages/NotificationPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Reset-Password" element={<ResetPasswordPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/PizzaDetailed" element={<PizzaDetailed />} />
+          <Route path="/Notification" element={<NotificationPage />} />
 
         </Routes>
       </BrowserRouter>

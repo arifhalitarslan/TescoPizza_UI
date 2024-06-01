@@ -13,6 +13,7 @@ import ResetPasswordPage from "./Pages/ResetPasswordPage";
 import RegisterPage from "./Pages/RegisterPage";
 import PizzaDetailed from "./Pages/PizzaDetailed";
 import NotificationPage from "./Pages/NotificationPage";
+import ContactUs from "./Pages/ContactUs";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/PizzaDetailed" element={<PizzaDetailed />} />
           <Route path="/Notification" element={<NotificationPage />} />
-
+          <Route path="/ContactUs" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Checkout.css';
-
 const Checkout = () => {
     const [cart, setCart] = useState([
         { id: 1, name: "Item 1", price: 10, quantity: 1 },
@@ -62,7 +61,9 @@ const Checkout = () => {
     };
 
     return (
-        <div className="checkout-container">
+       
+       
+       <div className="checkout-container">
             <div className="checkoutform-section">
                 <form>
                     <h2 className='bold'>PERSONAL INFORMATION</h2>
@@ -174,6 +175,7 @@ const Checkout = () => {
                 </div>
             </div>
         </div>
+       
     );
 }
 

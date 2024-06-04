@@ -1,5 +1,5 @@
 import Navbar from "../Components/Navbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./MainPage.css";
 import MiddlePageMiddlePhoto from "../assets/MiddlePageMiddlePhoto.jpg";
 import SearchIcon from "@mui/icons-material/Search";
@@ -14,7 +14,7 @@ import Pizza6 from "../assets/Pizza6.jpg";
 
 function MainPage() {
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div style={{ border: "1px solid black" }} className="AllMainPage">
@@ -63,7 +63,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -82,7 +82,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -122,7 +122,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -143,7 +143,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -162,7 +162,7 @@ const navigate = useNavigate();
                           <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#01C550' }}>12 TL</p>
                         </div>
                         <div className="UnderCardDescriptionButton">
-                          <button onClick={()=>{navigate("/pizzaDetailed")}}><AddIcon /></button>
+                          <button onClick={() => { navigate("/pizzaDetailed") }}><AddIcon /></button>
                         </div>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const navigate = useNavigate();
           <div className="RightSideTitle">
             <p>Muberra Yerinde</p>
             <button>
-              <NotificationsNoneIcon />
+              <Link to="/Notification"> <NotificationsNoneIcon /> </Link>
             </button>
           </div>
           <div className="RightSideOrderMenuTitle">
@@ -216,7 +216,7 @@ const navigate = useNavigate();
                       <div className="QuantityOrderPageDetailed">
                         <div><button style={{ padding: '2px 8px', borderRadius: '20px' }}>-</button></div>
                         <div><p style={{ marginLeft: '0.4rem', fontWeight: 'bold' }}>01</p></div>
-                        <div><button  style={{ marginLeft: '0.4rem', fontWeight: 'bold', padding: '2px 8px', borderRadius: '20px' }}>+</button></div>
+                        <div><button style={{ marginLeft: '0.4rem', fontWeight: 'bold', padding: '2px 8px', borderRadius: '20px' }}>+</button></div>
                       </div>
 
                     </div>
@@ -260,7 +260,7 @@ const navigate = useNavigate();
             </div>
           </div>
           <div className="CheckOutButton">
-            <button onClick={()=>{navigate("/Checkout")}}>Checkout</button>
+            <button onClick={() => { navigate("/Checkout") }}>Checkout</button>
           </div>
           <div className="RightSideAddressAndPrice">
             <div className="RightSideAddress">

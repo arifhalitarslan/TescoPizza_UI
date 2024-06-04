@@ -10,12 +10,12 @@ const LoginForm = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
+
     if (email === '' || password === '') {
       setError('Email or password cannot be empty');
     } else {
       console.log('Login form submitted (for display)');
-      setError(''); 
+      setError('');
     }
   };
 
@@ -24,7 +24,7 @@ const LoginForm = () => {
       <form className="login-form" onSubmit={handleLogin}>
         <div className="login-input-container">
           <h1 className="bold" style={{ textAlign: 'center' }}>Login</h1>
-          <label className="label-register" htmlFor="name" style={{color:'orange'}}>E-Mail</label>
+          <label className="label-register" htmlFor="name" style={{ color: 'orange' }}>E-Mail</label>
           <input
             type="email"
             className="login-input"
@@ -34,7 +34,7 @@ const LoginForm = () => {
           />
         </div>
         <div className="login-input-container">
-          <label className="label-register" htmlFor="name" style={{color:'orange'}}>Password</label>
+          <label className="label-register" htmlFor="name" style={{ color: 'orange' }}>Password</label>
           <input
             type="password"
             className="login-input"
@@ -43,16 +43,18 @@ const LoginForm = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" className="login-button">
-          Login
-        </button>
+        <Link to="/Home">
+          <button type="submit" className="login-button">
+            Login
+          </button>
+        </Link>
         {error && <p className="error-message">{error}</p>}
         <Link to="/forgot-password" className="forgot-password link" style={{ color: '#B67812' }}>
-  Forgot Password
-</Link>
-<Link to="/register" className="register link" style={{ color: '#B67812' }}>
-  Don't you have an account yet?
-</Link>
+          Forgot Password
+        </Link>
+        <Link to="/register" className="register link" style={{ color: '#B67812' }}>
+          Don't you have an account yet?
+        </Link>
 
 
 

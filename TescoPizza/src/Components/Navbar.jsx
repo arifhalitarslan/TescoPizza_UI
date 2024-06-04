@@ -5,19 +5,19 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import SettingsIcon from '@mui/icons-material/Settings';
 import EmailIcon from '@mui/icons-material/Email';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
   return (
-    <div className='AllNavbarPage' style={{width:'100%'}}>
-     <div className='NavbarButtonsMain'>
-     <button style={{ fontSize: '35px', color: 'orange'}}><HomeIcon fontSize="inherit" /></button>
-           
-           <button><AccountBalanceWalletIcon/></button>
-           <button><SettingsIcon/></button>
-           <button><EmailIcon/></button>
-           <button><ChatBubbleIcon/></button>
-     </div>
+    <div className='AllNavbarPage' style={{ width: '100%' }}>
+      <div className='NavbarButtonsMain'>
+        <Link to="/Home"> <button style={{ fontSize: '35px', color: 'orange' }}><HomeIcon fontSize="inherit" /></button> </Link>
+        <Link to="/Checkout"><button><AccountBalanceWalletIcon /></button> </Link>
+        <Link to="/Settings"> <button><SettingsIcon /></button> </Link>
+        <Link to="/ContactUs"><button><EmailIcon /></button></Link>
+        <Link to="/Message"> <button><ChatBubbleIcon /></button> </Link>
+      </div>
     </div>
   )
 }

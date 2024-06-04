@@ -7,10 +7,8 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AddIcon from '@mui/icons-material/Add';
 import Pizza1 from "../assets/Pizza1.jpg";
 import Pizza2 from "../assets/Pizza2.jpg";
-import Pizza3 from "../assets/Pizza3.jpg";
-import Pizza4 from "../assets/Pizza4.jpg";
-import Pizza5 from "../assets/Pizza5.jpg";
-import Pizza6 from "../assets/Pizza6.jpg";
+import { Link } from 'react-router-dom';
+
 
 function PizzaDetailed() {
   return (
@@ -84,7 +82,7 @@ function PizzaDetailed() {
                   <button style={{ marginRight: '15px', backgroundColor: 'white', padding: '3px', borderRadius: '10px' }}><AddIcon /></button></div>
               </div>
               <div className='AddMalzemeRight'>
-                arif halit arslan
+                + Added ingredients
               </div>
             </div>
             <div className='BottomAddButton'>
@@ -100,9 +98,11 @@ function PizzaDetailed() {
         <div className="RightSideMainPage">
           <div className="RightSideTitle">
             <p>Muberra Yerinde</p>
+
             <button>
-              <NotificationsNoneIcon />
+              <Link to="/Notification"> <NotificationsNoneIcon /> </Link>
             </button>
+
           </div>
           <div className="RightSideOrderMenuTitle">
             <div>

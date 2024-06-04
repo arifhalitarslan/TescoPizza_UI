@@ -14,6 +14,7 @@ import RegisterPage from "./Pages/RegisterPage";
 import PizzaDetailed from "./Pages/PizzaDetailed";
 import NotificationPage from "./Pages/NotificationPage";
 import ContactUs from "./Pages/ContactUs";
+import Message from "./Components/Message";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Settings" element={<SettingsPage />} />
           <Route path="/" element={<Form/>} />
           <Route path="/Forgot-Password" element={<ForgotPasswordPage />} />
+          <Route path="/Message" element={<Message />} />
           <Route path="/Reset-Password" element={<ResetPasswordPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/PizzaDetailed" element={<PizzaDetailed />} />

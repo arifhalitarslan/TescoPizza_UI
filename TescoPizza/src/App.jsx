@@ -30,7 +30,6 @@ function App() {
           <Route path="/Settings" element={<SettingsPage />} />
           <Route path="/" element={<Form/>} />
           <Route path="/Forgot-Password" element={<ForgotPasswordPage />} />
-          <Route path="/Message" element={<Message />} />
           <Route path="/Reset-Password" element={<ResetPasswordPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/PizzaDetailed" element={<PizzaDetailed />} />

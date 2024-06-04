@@ -98,14 +98,16 @@ main .span {
 input {
   margin-top: 14px;
   padding: 5px;
-  color: orange;
+  color: black;
 }
 .NomDuClient,
 .NumDeCarte {
   margin-top: 10px;
 }
 .NomDuClient input,
-.NumDeCarte input {
+.NumDeCarte input,
+.DateEtCvc input {
+  border: 1px solid grey;
   width: 255px;
   height: 35px;
 }

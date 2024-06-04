@@ -16,7 +16,7 @@ function Navbar() {
         <Link to="/Checkout"><button><AccountBalanceWalletIcon /></button> </Link>
         <Link to="/Settings"> <button><SettingsIcon /></button> </Link>
         <Link to="/ContactUs"><button><EmailIcon /></button></Link>
-        <Link to="/Message"> <button><ChatBubbleIcon /></button> </Link>
+        <Link to="/Notification"> <button><ChatBubbleIcon /></button> </Link>
       </div>
     </div>
   )
